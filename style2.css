@@ -1,0 +1,173 @@
+/* style.css */
+html {
+  background-color: #4C4D55;
+}
+body{
+  background-color: #4C4D55;
+}
+
+#content {
+  display: flex;
+  width: 393px;
+  height: 856px;
+  margin-top: 52px;
+  justify-content: left;
+  align-items: center;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.upmain {
+  position: absolute;
+z-index: 10;
+left: 55px;
+top: 62px;
+}
+.downmain{
+  position: absolute;
+  z-index: 10;
+  bottom: 67px;
+  width: 393px;
+}
+
+.back {
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.backGround{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back>span>object{
+  z-index: 5;
+  border-radius: 30px;
+width: 192px;
+height: 371px;
+}
+.back>span{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#content>#canvasContainer{
+  z-index: 20;
+  display: flex;
+  position: absolute;
+  width: 353px;
+  height: 515px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: center;
+  top: 150px;
+  left: 20px;
+}
+.downleft{
+z-index: 15;
+position: absolute;
+left: 30px;
+bottom: 50px;
+}
+.downleft>p{
+  color: var(--gray, #E5E6E7);
+font-family: "SUIT Variable";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.36px;
+text-transform: uppercase;
+margin: 0;
+padding: 0;
+}
+.downright>button{
+  display: flex;
+  width: 142.47981px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  align-self: stretch;
+  border-radius: 30px;
+background: var(--yellow, #CF0);
+margin: 8px;
+color: var(--almostblack, #1F1F1F);
+font-family: "SUIT Variable";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 110%;
+letter-spacing: -0.42px;
+text-transform: uppercase;
+}
+.downright>button>object{
+  margin-right: 12px;
+}
+.downright{
+  align-items: center;
+  position: absolute;
+  bottom: 6px;
+  right: 15px;
+}
+
+
+object{
+  display: inline;
+  margin: 4px;
+}
+
+.rightBtn{
+  position: absolute;
+  left: 180px;
+  top: 20px;
+  width: 150px;
+  color: #CF0;
+  display: flex;
+  flex-direction: row;
+}
+.rightBtn>div>p{
+  color: var(--yellow, #CF0);
+font-family: "SUIT Variable";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.56px;
+text-transform: uppercase;
+padding: 0;
+margin: 0;
+}
+.rightBtn>object{
+  margin: 0;
+  margin-right: 12px;
+}
+
+.upleft{
+  position: absolute;
+  
+  width: 300px;
+}
+
+
+.upleft>h3{
+  color: var(--white, #FFF);
+  font-family: "SUIT Variable";
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+}

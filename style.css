@@ -1,0 +1,316 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--almostblack,#1F1F1F);
+}
+canvas {
+  display: block;
+}
+
+.up,.down{
+  color: white;
+  width: 353px;
+}
+
+
+
+
+.colorSel{
+  z-index: 3;
+  margin: auto 5px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+}
+
+#colorSelection{
+  display: flex;
+  width: 337px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+#canvasContainer{
+  width: 353px;
+  height: 515px;
+  flex-shrink: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  margin: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.checked{
+  /*width: 62px;
+  height: 31px;*/
+  padding: 30px 15px 30px 15px;
+  visibility: hidden;
+}
+
+
+span.leftBtn, span.rightBtn {
+  display: inline-block;
+  gap: 8px;
+  width: 88px;
+  height: 26px;
+  position: relative;
+  cursor: pointer;
+}
+
+
+span.leftBtn>object.leftBtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+span.leftBtn>p {
+  position: absolute;
+  color: var(--darkgray, #4C4D55);
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+
+span.rightBtn>object.rightBtn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+span.rightBtn>p {
+  color: var(--yellow, #CF0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  margin-left: 18px;
+
+}
+
+
+span.leftBtn>p, span.rightBtn>p {
+  font-family: "SUIT Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+
+.textBox{
+  width: 351.439px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  border-radius: 30px;
+  background: #E5E6E7;
+  margin: 6px 6px 6px 20px;
+  margin-bottom: 24px;
+  padding: 10px 0px;
+}
+
+.writed{
+  display: flex;
+  width: 42px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 1000px;
+  margin-left: 20px;
+  margin: 6px;
+  background: var(--middlegray, #999AA0);
+}
+
+.inputBox{
+  background-color: transparent;
+  padding: 6px 20px 6px 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--almostblack, #1F1F1F);
+  font-family: "SUIT Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.141%; /* 15px */
+  letter-spacing: -0.42px;
+  text-transform: uppercase;
+  flex: 1 0 0;
+}
+
+.boxarea{
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--almostblack, #1F1F1F);
+  font-family: "SUIT Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 107.141%; 
+  letter-spacing: -0.42px;
+  text-transform: uppercase;
+  flex: 1 0 0;
+  height: 14px;
+  resize: none;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+
+.inputBox:focus{
+  border: none;
+  outline: none;
+}
+
+.mark{
+  color: var(--yellow, #CF0);
+  text-align: center;
+  font-family: "SUIT Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+
+.normal{
+  color: var(--white, #FFF);
+  font-family: "SUIT Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  text-transform: uppercase;
+}
+
+.cMenu{
+  color: var(--white, #FFF);
+  font-family: "SUIT Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.upTitle{
+  display: block;
+  position: relative;
+  top: -30px;
+
+}
+
+.up{
+  display: flex;
+  width: 353px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 20px;
+  margin-top: 130px;
+}
+.stepNum{
+display: block;
+color: var(--middlegray, #999AA0);
+font-family: "SUIT Variable";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.48px;
+text-transform: uppercase;
+text-align: center;
+margin: 0;
+}
+
+.down{
+  display: flex;
+  width: 350.912px;
+  transform: rotate(-0.146deg);
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 20px;
+}
+
+.down>h3{
+  color: var(--white, #FFF);
+  font-family: "SUIT Variable";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 644;
+  line-height: 107.141%; /* 34.285px */
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  margin: auto;
+}
+
+.content{
+  width: 393px;
+  height: 856px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question,.review{
+  text-align: center;
+  width: 393px;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.back>object{
+  z-index: -10;
+  display: inline-block;
+  border-radius: 30px;
+}
+
+.reviewTextTitle{
+  color: var(--almostblack, #1F1F1F);
+  font-family: "SUIT Variable";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.42px;
+  text-transform: uppercase;
+  
+}
+
+.reviewTextContent{
+color: var(--almostblack, #1F1F1F);
+width: inherit;
+font-family: "SUIT Variable";
+font-size: 12px;
+font-style: normal;
+line-height: normal;
+letter-spacing: -0.48px;
+text-transform: uppercase;
+}
+
+.reviewTextbox{
+width: 140px;
+height: 40px;
+
+}
